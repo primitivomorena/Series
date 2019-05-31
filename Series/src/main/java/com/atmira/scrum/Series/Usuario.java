@@ -1,7 +1,6 @@
 package com.atmira.scrum.Series;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 public class Usuario {
@@ -10,17 +9,15 @@ public class Usuario {
 	private Date nacimiento;
 	private String email;
 	private List<Serie> listaFavoritos;
-	private List<Temporada> listaTemporada;//TODO: Corregir tipo de datos
-	private List<Capitulo> listaCapitulos;//TODO: Corregir tipo de datos
+	private List<Temporada> listaTemporada;// TODO: Corregir tipo de datos
+	private List<Capitulo> listaCapitulos;// TODO: Corregir tipo de datos
 	private List<Critica> listaCriticas;
-	
+
 	public Usuario() {
 		super();
 	}
 
-	public Usuario(String nombre_usuario, String apellido_usuario, Date nacimiento, String email,
-			List<Serie> listaFavoritos, List<Temporada> listaTemporada, List<Capitulo> listaCapitulos,
-			List<Critica> listaCriticas) {
+	public Usuario(String nombre_usuario, String apellido_usuario, Date nacimiento, String email) {
 		super();
 		this.nombre_usuario = nombre_usuario;
 		this.apellido_usuario = apellido_usuario;
@@ -95,7 +92,5 @@ public class Usuario {
 	public void setListaCriticas(List<Critica> listaCriticas) {
 		this.listaCriticas = listaCriticas;
 	}
-	
-	
-	
+
 }
