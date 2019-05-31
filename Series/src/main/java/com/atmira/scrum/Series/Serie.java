@@ -18,28 +18,20 @@ public class Serie {
 	private List<Personaje> listaPersonaje;
 	private List<Temporada> listaTemporada;
 	private idiomaOriginal idioma;
-	private Double punt_media;
-
+	private Double punt_total;
+	private static int numero_votaciones;
 
 	private List<Critica> listaCritica;
 	
-	public Serie(String titulo, int any, String sinopsis, genero generoSerie, List<Personaje> listaPersonaje,
-			List<Temporada> listaTemporada, idiomaOriginal idioma,
-			Double punt_media , List<Critica> listaCritica) {}
-	// private List<Critica> listaCritica;
-
-
-
-
 	public Serie(String titulo, int any, String sinopsis, genero generoSerie, idiomaOriginal idioma,
-			Double punt_media) {
+			Double punt_total) {
 		super();
 		this.titulo = titulo;
 		this.any = any;
 		this.sinopsis = sinopsis;
 		this.generoSerie = generoSerie;
 		this.idioma = idioma;
-		this.punt_media = punt_media;
+		this.punt_total = punt_total;
 		this.listaCritica = listaCritica;
 	}
 
@@ -104,11 +96,11 @@ public class Serie {
 	}
 
 	public Double getPunt_media() {
-		return punt_media;
+		return punt_total;
 	}
 
 	public void setPunt_media(Double punt_media) {
-		this.punt_media = punt_media;
+		this.punt_total = punt_media;
 	}
 
 	public List<Critica> getListaCritica() {
