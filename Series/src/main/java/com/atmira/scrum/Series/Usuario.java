@@ -102,7 +102,8 @@ public class Usuario {
 	}
 
 	void PuntuarSerie(int puntuacion) {
-
+		Serie serie = new Serie();
+		// serie.set
 	}
 
 	void CancelarTemporada(Temporada temporada) {
