@@ -113,9 +113,9 @@ public class Serie {
 
 
 	public Double ObtenerPuntacionMedia(){
-		Double puntacionMedia = 0.0;
+		Double puntuacionMedia = 0.0;
 		
-		return puntacionMedia;
+		return puntuacionMedia;
 	}
 
 
