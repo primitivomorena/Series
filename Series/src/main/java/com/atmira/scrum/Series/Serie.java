@@ -28,8 +28,6 @@ public class Serie {
 		this.any = any;
 		this.sinopsis = sinopsis;
 		this.generoSerie = generoSerie;
-		this.listaPersonaje = listaPersonaje;
-		this.listaTemporada = listaTemporada;
 		this.idioma = idioma;
 		this.punt_media = punt_media;
 		// this.listaCritica = listaCritica;
