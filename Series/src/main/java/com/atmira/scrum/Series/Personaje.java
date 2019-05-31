@@ -6,16 +6,21 @@ public class Personaje {
 
 	private String nombre_personaje;
 	private int edad;
-	private String nombre_actor;
+	private Actor actor;
 
 	ArrayList<Capitulo> lista_capitulos = new ArrayList<Capitulo>();
 
 	ArrayList<Serie> lista_serie = new ArrayList<Serie>();
 
-	public Personaje(String nombre_personaje, int edad, String nombre_actor) {
+	private void afegir_actor(String nombre_actor, String nacionalidad_actor, int edad_actor) {
+		this.actor = new Actor(nombre_actor, nacionalidad_actor, edad_actor);
+	}
+
+	public Personaje(String nombre_personaje, int edad, String actor, String nombre_actor, String nacionalidad_actor,
+			int edad_actor) {
 		this.nombre_personaje = nombre_personaje;
 		this.edad = edad;
-		this.nombre_actor = nombre_actor;
+		afegir_actor(nombre_actor, nacionalidad_actor, edad_actor);
 	}
 
 	public String getNombre_personaje() {
@@ -34,12 +39,11 @@ public class Personaje {
 		this.edad = edad;
 	}
 
-	public String getNombre_actor() {
-		return nombre_actor;
-	}
-
-	public void setNombre_actor(String nombre_actor) {
-		this.nombre_actor = nombre_actor;
-	}
+	/*
+	 * public String getNombre_actor() { return nombre_actor; }
+	 * 
+	 * public void setNombre_actor(String nombre_actor) { this.nombre_actor =
+	 * nombre_actor; }
+	 */
 
 }
