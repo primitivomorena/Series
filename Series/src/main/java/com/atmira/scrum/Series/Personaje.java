@@ -10,11 +10,7 @@ public class Personaje {
 
 	ArrayList<Capitulo> lista_capitulos = new ArrayList<Capitulo>();
 
-	// ****************************
-	// DESCOMENTAR CUANDO LA CLASE SERIE
-	// ESTE HECHA
-	// ***************************
-	// ArrayList<Serie> lista_serie = new ArrayList<Serie>();
+	ArrayList<Serie> lista_serie = new ArrayList<Serie>();
 
 	public Personaje(String nombre_personaje, int edad, String nombre_actor) {
 		this.nombre_personaje = nombre_personaje;

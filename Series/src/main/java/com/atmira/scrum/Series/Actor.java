@@ -1,6 +1,7 @@
 package com.atmira.scrum.Series;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Actor {
 
@@ -8,7 +9,7 @@ public class Actor {
 	private String nacionalidad;
 	private int edad;
 
-	ArrayList<Personaje> lista_personaje = new ArrayList<Personaje>();
+	List<Personaje> lista_personaje = new ArrayList<Personaje>();
 
 	public Actor(String nombre_actor, String nacionalidad, int edad) {
 		this.nombre_actor = nombre_actor;
