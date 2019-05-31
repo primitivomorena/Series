@@ -10,20 +10,20 @@ public class Serie {
 	private int any;
 	private String sinopsis;
 	private genero generoSerie;
-//	private List<Personaje> listaPersonaje;
+	private List<Personaje> listaPersonaje;
 	private List<Temporada> listaTemporada;
 	private idiomaOriginal idioma;
 	private Double punt_media;
 //	private List<Critica> listaCritica;
 	
-	public Serie(String titulo, int any, String sinopsis, genero generoSerie, /*List<Personaje> listaPersonaje,*/
+	public Serie(String titulo, int any, String sinopsis, genero generoSerie, List<Personaje> listaPersonaje,
 			List<Temporada> listaTemporada, idiomaOriginal idioma, Double punt_media/*, List<Critica> listaCritica*/) {
 		super();
 		this.titulo = titulo;
 		this.any = any;
 		this.sinopsis = sinopsis;
 		this.generoSerie = generoSerie;
-		//this.listaPersonaje = listaPersonaje;
+		this.listaPersonaje = listaPersonaje;
 		this.listaTemporada = listaTemporada;
 		this.idioma = idioma;
 		this.punt_media = punt_media;
@@ -66,13 +66,13 @@ public class Serie {
 		this.generoSerie = generoSerie;
 	}
 
-	/*public List<Personaje> getListaPersonaje() {
+	public List<Personaje> getListaPersonaje() {
 		return listaPersonaje;
 	}
 
 	public void setListaPersonaje(List<Personaje> listaPersonaje) {
 		this.listaPersonaje = listaPersonaje;
-	}*/
+	}
 
 	public List<Temporada> getListaTemporada() {
 		return listaTemporada;
