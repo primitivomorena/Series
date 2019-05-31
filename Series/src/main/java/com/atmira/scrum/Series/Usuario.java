@@ -23,10 +23,6 @@ public class Usuario {
 		this.apellido_usuario = apellido_usuario;
 		this.nacimiento = nacimiento;
 		this.email = email;
-		this.listaFavoritos = listaFavoritos;
-		this.listaTemporada = listaTemporada;
-		this.listaCapitulos = listaCapitulos;
-		this.listaCriticas = listaCriticas;
 	}
 
 	public String getNombre_usuario() {
