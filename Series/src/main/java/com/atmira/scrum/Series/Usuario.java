@@ -89,4 +89,26 @@ public class Usuario {
 		this.listaCriticas = listaCriticas;
 	}
 
+	/// METODOS///
+
+	void AniadirAFav(Serie serie) {
+
+	}
+
+	void PuntuarSerie(int puntuacion) {
+
+	}
+
+	void CancelarTemporada(Temporada temporada) {
+
+	}
+
+	void CapituloVisto(Capitulo capitulo) {
+
+	}
+
+	void ComprobarCapituloTemporada() {
+		// hola
+	}
+
 }
