@@ -20,12 +20,16 @@ public class Serie {
 	private idiomaOriginal idioma;
 	private Double punt_media;
 
+
 	private List<Critica> listaCritica;
 	
 	public Serie(String titulo, int any, String sinopsis, genero generoSerie, List<Personaje> listaPersonaje,
 			List<Temporada> listaTemporada, idiomaOriginal idioma,
 			Double punt_media , List<Critica> listaCritica) {}
 	// private List<Critica> listaCritica;
+
+
+
 
 	public Serie(String titulo, int any, String sinopsis, genero generoSerie, idiomaOriginal idioma,
 			Double punt_media) {
@@ -117,9 +121,12 @@ public class Serie {
 		this.listaCritica = listaCritica;
 	}
 
+
 	public Double ObtenerPuntacionMedia(){
 		Double puntacionMedia = 0.0;
 		
 		return puntacionMedia;
 	}
+
+
 }
