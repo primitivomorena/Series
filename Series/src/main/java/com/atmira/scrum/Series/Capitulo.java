@@ -9,8 +9,15 @@ public class Capitulo {
 	private int duracion;
 	private int numeroCapitulo;
 	List<Subtitulo> listaSubtitulos = new ArrayList<Subtitulo>();
-	// List<Personaje> listaPersonajes = new ArrayList<Personaje>();
+	List<Personaje> listaPersonajes = new ArrayList<Personaje>();
 	// List<Critica> listaCriticas = new ArrayList<Critica>();
+
+	public Capitulo(String tituloCapitulo, int duracion, int numeroCapitulo) {
+		super();
+		this.tituloCapitulo = tituloCapitulo;
+		this.duracion = duracion;
+		this.numeroCapitulo = numeroCapitulo;
+	}
 
 	public String getTituloCapitulo() {
 		return tituloCapitulo;
@@ -40,24 +47,12 @@ public class Capitulo {
 		return listaSubtitulos;
 	}
 
-	public void setListaSubtitulos(List<Subtitulo> listaSubtitulos) {
-		this.listaSubtitulos = listaSubtitulos;
+	public List<Personaje> getListaPersonajes() {
+		return listaPersonajes;
 	}
-
-	// public List<Personaje> getListaPersonajes() {
-	// return listaPersonajes;
-	// }
-
-	// public void setListaPersonajes(List<Personaje> listaPersonajes) {
-	// this.listaPersonajes = listaPersonajes;
-	// }
 
 	// public List<Critica> getListaCriticas() {
 	// return listaCriticas;
-	// }
-
-	// public void setListaCriticas(List<Critica> listaCriticas) {
-	// this.listaCriticas = listaCriticas;
 	// }
 
 }

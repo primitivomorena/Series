@@ -8,6 +8,11 @@ public class Subtitulo {
 
 	private String autor;
 
+	public Subtitulo(String autor) {
+		super();
+		this.autor = autor;
+	}
+
 	public String getAutor() {
 		return autor;
 	}
