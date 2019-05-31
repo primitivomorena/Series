@@ -101,9 +101,9 @@ public class Usuario {
 
 	}
 
-	void PuntuarSerie(int puntuacion) {
+	void PuntuarSerie(double puntuacion) {
 		Serie serie = new Serie();
-		// serie.set
+		serie.setPunt_total(puntuacion);
 	}
 
 	void CancelarTemporada(Temporada temporada) {
