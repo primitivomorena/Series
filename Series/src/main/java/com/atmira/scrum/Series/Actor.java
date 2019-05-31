@@ -8,7 +8,7 @@ public class Actor {
 	private String nacionalidad;
 	private int edad;
 
-	ArrayList<String> lista_personaje = new ArrayList<String>();
+	ArrayList<Personaje> lista_personaje = new ArrayList<Personaje>();
 
 	public Actor(String nombre_actor, String nacionalidad, int edad) {
 		this.nombre_actor = nombre_actor;

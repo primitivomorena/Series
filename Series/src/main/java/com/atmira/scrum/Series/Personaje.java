@@ -8,8 +8,13 @@ public class Personaje {
 	private int edad;
 	private String nombre_actor;
 
-	ArrayList<String> lista_capitulos = new ArrayList<String>();
-	ArrayList<String> lista_serie = new ArrayList<String>();
+	ArrayList<Capitulo> lista_capitulos = new ArrayList<Capitulo>();
+
+	// ****************************
+	// DESCOMENTAR CUANDO LA CLASE SERIE
+	// ESTE HECHA
+	// ***************************
+	// ArrayList<Serie> lista_serie = new ArrayList<Serie>();
 
 	public Personaje(String nombre_personaje, int edad, String nombre_actor) {
 		this.nombre_personaje = nombre_personaje;
