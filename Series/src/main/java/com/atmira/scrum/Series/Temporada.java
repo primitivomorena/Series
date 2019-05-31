@@ -6,16 +6,16 @@ import java.util.List;
 public class Temporada {
 	private int num_temp;
 	private Serie serie;
-	private List<Capitulo> ListaCapitulos;
+	//private List<Capitulo> ListaCapitulos;
 	private Date fecha_produccion;
 	private Date fecha_salida;
 	
-	public Temporada(int num_temp, Serie serie, List<Capitulo> listaCapitulos, Date fecha_produccion,
+	public Temporada(int num_temp, Serie serie/*, List<Capitulo> listaCapitulos*/, Date fecha_produccion,
 			Date fecha_salida) {
 		super();
 		this.num_temp = num_temp;
 		this.serie = serie;
-		ListaCapitulos = listaCapitulos;
+		//ListaCapitulos = listaCapitulos;
 		this.fecha_produccion = fecha_produccion;
 		this.fecha_salida = fecha_salida;
 	}
@@ -40,14 +40,14 @@ public class Temporada {
 		this.serie = serie;
 	}
 
-	public List<Capitulo> getListaCapitulos() {
+	/*public List<Capitulo> getListaCapitulos() {
 		return ListaCapitulos;
 	}
 
 	public void setListaCapitulos(List<Capitulo> listaCapitulos) {
 		ListaCapitulos = listaCapitulos;
 	}
-
+	 */
 	public Date getFecha_produccion() {
 		return fecha_produccion;
 	}
