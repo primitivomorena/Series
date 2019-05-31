@@ -16,6 +16,11 @@ public class Personaje {
 		this.actor = new Actor(nombre_actor, nacionalidad_actor, edad_actor);
 	}
 
+	private void afegir_personaje_BDD() {
+
+		// connect();
+	}
+
 	public Personaje(String nombre_personaje, int edad, String actor, String nombre_actor, String nacionalidad_actor,
 			int edad_actor) {
 		this.nombre_personaje = nombre_personaje;

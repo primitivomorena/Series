@@ -1,6 +1,7 @@
 package com.atmira.scrum.Series;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 public class Usuario {
@@ -9,16 +10,21 @@ public class Usuario {
 	private Date nacimiento;
 	private String email;
 	private List<Serie> listaFavoritos;
-	private List<Temporada> listaTemporada;// TODO: Corregir tipo de datos
-	private List<Capitulo> listaCapitulos;// TODO: Corregir tipo de datos
+
+	private HashMap<Integer, List<Temporada>> listaTemporada;// <-
+																// serie.getId();
+	private HashMap<Integer, List<Capitulo>> listaCapitulos;// <-
+															// temporada.getId();
+
 	private List<Critica> listaCriticas;
 
 	public Usuario() {
 		super();
 	}
 
-	public Usuario(String nombre_usuario, String apellido_usuario, Date nacimiento, String email) {
-		super();
+	public Usuario(String nombre_usuario, String apellido_usuario, Date nacimiento, String email,
+			List<Serie> listaFavoritos, HashMap<Integer, List<Temporada>> listaTemporada,
+			HashMap<Integer, List<Capitulo>> listaCapitulos, List<Critica> listaCriticas) {
 		this.nombre_usuario = nombre_usuario;
 		this.apellido_usuario = apellido_usuario;
 		this.nacimiento = nacimiento;
@@ -65,19 +71,19 @@ public class Usuario {
 		this.listaFavoritos = listaFavoritos;
 	}
 
-	public List<Temporada> getListaTemporada() {
+	public HashMap<Integer, List<Temporada>> getListaTemporada() {
 		return listaTemporada;
 	}
 
-	public void setListaTemporada(List<Temporada> listaTemporada) {
+	public void setListaTemporada(HashMap<Integer, List<Temporada>> listaTemporada) {
 		this.listaTemporada = listaTemporada;
 	}
 
-	public List<Capitulo> getListaCapitulos() {
+	public HashMap<Integer, List<Capitulo>> getListaCapitulos() {
 		return listaCapitulos;
 	}
 
-	public void setListaCapitulos(List<Capitulo> listaCapitulos) {
+	public void setListaCapitulos(HashMap<Integer, List<Capitulo>> listaCapitulos) {
 		this.listaCapitulos = listaCapitulos;
 	}
 
